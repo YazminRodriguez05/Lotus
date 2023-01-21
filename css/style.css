@@ -161,12 +161,6 @@ nav{
     height: 30vh;
 }
 
-.info_cantidad{
-    padding-left: 17vh;
-    color: #032B22;
-    font-family: 'Lora', serif;
-}
-
 .habitaciones{
     color: #032B22;
     padding-top: 1vh;
@@ -218,7 +212,9 @@ nav{
 }
 
 /*Footer*/
-
+.display_footer{
+    display: flex;
+}
 footer{
     background-color: #e4bbe9;
 }
@@ -518,7 +514,311 @@ a:visited{ color:#dc5fec; }
         padding: 4px;
         color: white;
     }
+
+    /*Titulo main*/
+    .img_inicio{
+        background-image: url(../assets/img/hotel9.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .titulo{
+        color: white;
+        -webkit-text-stroke: 1px black; 
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Lora', serif;
+        padding-top: 100px;
+    }
+
+    .centrar{
+        text-align: center;
+        font-size: 2vh;
+    }
+
+    .subtitulo{
+        color: white;
+        -webkit-text-stroke: 1px black;    
+        font-size: 3vh;
+        font-family: 'Lora', serif;
+        line-height: 0.9;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .presentacion1{
+        background-color: #efede7;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info_presentacion{
+        width: 100%
+    }
     
+    .display{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tit_pres{
+        justify-content: center;
+        font-family: 'Lora', serif;
+        font-size: 3vh;
+        color: #00503f;
+        padding: 3vh 3vh 1vh 3vh;
+    }
+
+    .subtit{
+        font-size: 2vh; 
+        padding: 1vh 5vh 2vh 5vh;  
+        text-align: justify; 
+    }
+
+    .img_main{
+        justify-content: center;
+        height: 30vh;
+        border-radius: 90px;
+        padding-left: 50px;
+        padding-top: 0px;
+        padding-right: 3vh;
+        padding-bottom: 30px;
+    }
+
+    .presentacion2{
+        background-color: #ffafda;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aloj{
+        padding-top: 10px;
+        padding-bottom: 3vh;
+        background-color: #ffafda;
+        color: #032B22;
+        text-align: center;
+        font-size: 3vh;
+        font-family: 'Lora', serif;
+    }
+
+    .seccion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .img_seccion{
+        justify-content: center;
+        padding-right: 5vh;
+        padding-left: 5vh;
+        height: 25vh;
+    }
+
+    .img_seccion_2{
+        justify-content: center;
+        padding-right: 2vh;
+        padding-left:2vh;
+        height: 25vh;
+    }
+
+    .img_seccion_3{
+        justify-content: center;
+        padding-right: 3vh;
+        padding-left: 3vh;
+        height: 25vh;
+    }
+
+    .habitaciones{
+        color: #032B22;
+        
+        padding-left: 10vh;
+        padding-right: 10vh;
+        padding-bottom: 0vh;
+        font-family: 'Lora', serif; 
+    }
+
+    .habitaciones_2{
+        text-align: center;
+        color: #032B22;
+        padding-top: 1vh;
+        padding-left: 2vh;
+        font-family: 'Lora', serif;
+    }
+
+    .habitaciones_3{
+        text-align: center;
+        color: #032B22;
+        padding-top: 1vh;
+        padding-left: 4vh;
+        font-family: 'Lora', serif;
+    }
+
+    .presentacion3{
+        display: flex;
+        flex-direction: column;
+        background-color:#032B22;
+    }
+
+    .text_descr{
+        color: #40FFB5;
+        font-size: 2.5vh;
+        padding: 5vh 3vh 2vh 3vh;  
+        text-align: center;
+        font-family: 'Lora', serif; 
+    }
+
+    .links{
+        padding-top: 2vh;
+        text-align: center;
+        color: white;
+        font-size: 2vh;
+        padding-bottom: 1vh;
+    }
+
+    .links li a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Lora', serif;
+    }
+    /*Sobre Nosotros html*/
+
+    .fondo_sobre_nos{
+        background-image: url(../assets/img/hotel8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .background{
+        background-color: #efede7;
+    }
+
+    .parrafo_sob_nos{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 20px;
+        font-size: 2vh ;
+        font-family: 'Lora', serif;
+        padding-left: 8vh;
+        padding-right: 8vh;
+    }
+
+    .img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_sob{
+        width: 80%;
+        
+    }
+
+    .img_sob1{
+        width: 80%;
+    }
+
+
+    .parrafo_sob_nos1{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 20px;
+        font-size: 2vh;
+        font-family: 'Lora', serif;
+        padding: 15vh 25vh  5vh 10vh;
+
+    }
+
+    .parrafo_sob_nos2{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        line-height: 20px;
+        font-size: 2vh;
+        font-family: 'Lora', serif;
+        padding: 15vh 10vh  5vh 20vh;
+    }
+
+    /*Suscribete html*/
+
+    .naveg{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+        font-size: small;
+    }
+
+    .naveg li a{
+        text-decoration: none;
+        padding-top: 20vh ; 
+        color: white;
+    }
+    .fondo_suscribete{
+        background-image: url(../assets/img/playa.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .titulo_para_imagen{
+        color: white;
+        -webkit-text-stroke: 1px black; 
+        text-align: center;
+        font-size: 3rem ;
+        font-family: 'Lora', serif;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .parrafo{
+        text-align: center;
+        font-size: 2.5vh;
+        font-family: 'Lora', serif;
+        padding-top: 3vh;
+        padding-left: 4vh;
+        padding-right: 4vh;
+    }
+
+    .margen{
+        padding: 2vh 2vh 2vh 2vh;
+        font-size: 5vh;
+    }
+
+    .formulario_sus{
+        display: flex;
+    }
+
+    .formulario{
+        justify-content: center;
+        padding: 10vh 15vh 15vh 10vh;
+        
+    }
+
+    .fondo_mapa{
+        background-color: #efede7;
+    }
+    .titulo_mapa{
+        text-align: center;
+        font-size: 3vh;
+        color: #032B22;
+        font-family: 'Lora', serif;
+        padding-top: 3vh;
+        padding-left: 8vh;
+        padding-right: 8vh;
+    }
+    .mapa{
+        display: flex;
+        height:  60vh;
+        padding-bottom: 5vh ;
+        justify-content: center;
+        
+    }
+
     /*Galeria*/
 
     .tit_galeria{
@@ -544,6 +844,9 @@ a:visited{ color:#dc5fec; }
 
 
     /*Footer*/
+    .display_footer{
+        display: flex;
+    }
 
     a:visited{ color:#dc5fec; }
 
