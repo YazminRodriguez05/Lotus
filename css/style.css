@@ -4,108 +4,7 @@
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 320px){
-
-    /*Nav*/
-
-    .contenedor_logo{
-        width: 30%;
-    }
-    .logo{
-        padding-left: 5px;
-        width: 6vh;
-    }
-    
-    header{
-        display: flex;
-        background-color: #e4bbe9;
-    }
-    
-    nav{
-        display: flex;
-        justify-content: flex-end;
-        width: 60%;
-    }
-    
-    .navegacion{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 60%;
-    }
-    
-    .navegacion li a{
-        font-size: 2vh;
-        text-decoration: none;
-        padding: 4px;
-        color: white;
-    }
-    
-
-
-
-/*Galeria*/
-
-.tit_galeria{
-    color: #00503f;
-    text-align: center;
-    font-size: 6vh;
-    font-family: 'Lora', serif;
-    padding-top: 5vh;
-    padding-bottom: 2vh;
-}
-
-
-.galeria{
-    display: flex;
-    flex-flow: column;
-}
-
-.galeria img{
-    flex-wrap: wrap;
-    width: 80;
-    padding: 10px;
-    justify-content: space-around;
-}
-
-
-/*Footer*/
-
-footer{
-    background-color: #e4bbe9;
-}
-
-.direccion{
-    display: inline-block;
-    padding-top: 5vh;
-    padding-left: 5vh;
-    padding-bottom: 3vh;
-    font-family: 'Lora', serif; 
-}
-
-.horarios{
-    display: inline-block;
-    padding-top: 2vh;
-    padding-left: 5vh;
-    padding-bottom: 3vh;
-    font-family: 'Lora', serif; 
-}
-
-.redes { 
-    display: inline-block;
-    padding-left: 10vh;
-    text-align: center;
-}
-
-}
-
-@media screen and (min-width: 1200px){
 /*Barra de nav*/
-
-.fondo{
-    background-color: rgb(121, 15, 107);
-}
 
 .logo{
     padding-left: 2vh;
@@ -194,6 +93,8 @@ nav{
 
 .display{
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 .img_main_div{
@@ -347,18 +248,33 @@ footer{
     padding-left: 20vh;
 }
 
+
+a:visited{ color:#dc5fec; }
+
 .redes a{
     text-decoration: none;
 }
 
 .redes a:hover{
-    color: #d23be6 ;
+    color: #d01ce7 ;
 }
-/*que_hacer html*/
+/*propuestas html*/
+.background_prop{
+    background-color:#efede7 ;
+}
 
-.info{
+.tit_prop{
+    color: #032B22;
+    text-align: center;
+    font-size: 9vh;
+    font-family: 'Lora', serif;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+
+}
+
+.descrip{
     width: 50%;
-    text-decoration: none;
     display: inline-block;
     line-height: 7vh;
     font-size: 3.5vh;
@@ -366,7 +282,7 @@ footer{
     padding-top: 5vh;
     padding: 10vh
 }
-.info_1{
+.descrip_1{
     width: 50%;
     text-decoration: none;
     display: inline-block;
@@ -377,11 +293,22 @@ footer{
     padding-left: 15vh;
     
 }
+.descrip_2{
+    width: 50%;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 7vh;
+    font-size: 3.5vh;
+    font-family: 'Lora', serif;
+    padding-top: 20vh;
+    padding-left: 10vh;
+    
+}
 .img_que_hacer{
     display: inline-block;
-    height: 60vh;
-    padding-left: 5vh;
+    width: 100%;
 }
+
 
 /*Galeria html*/
 
@@ -429,7 +356,7 @@ footer{
     line-height: 7vh;
     font-size: 3.5vh;
     font-family: 'Lora', serif;
-    padding: 10vh 15vh 5vh 15vh;
+    padding: 8vh 15vh 0vh 15vh;
 
 }
 
@@ -440,19 +367,13 @@ footer{
 
 .img_sob{
     display: inline-block;
-    padding-top: 10vh;
-    height:  65vh;
+    padding-top: 8vh;
+    width: 100%;
 }
 
 .img_sob1{
     display: inline-block;
-    padding: 10vh 15vh 5vh 15vh;
-    height:  75vh;
-}
-
-.img_sauna{
-    display: inline-block;
-    height:  60vh;
+    width: 100%;
 }
 
 
@@ -463,7 +384,7 @@ footer{
     line-height: 7vh;
     font-size: 3.5vh;
     font-family: 'Lora', serif;
-    padding: 15vh 10vh  5vh 10vh;
+    padding: 15vh 25vh  5vh 10vh;
 
 }
 
@@ -477,6 +398,25 @@ footer{
     padding: 15vh 10vh  5vh 20vh;
 }
 /*Suscribete html*/
+
+.naveg{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.naveg li a{
+    text-decoration: none;
+    padding-top: 20vh ; 
+    color: white;
+}
+
+.naveg li a:hover{
+    border-bottom: solid 1px;
+    font-size: 2.5vh;
+}
 
 .fondo_suscribete{
     background-image: url(../assets/img/playa.jpg);
@@ -492,7 +432,7 @@ footer{
     font-size: 9rem;
     font-family: 'Lora', serif;
     padding-top: 30vh;
-    padding-bottom: 30vh;
+    padding-bottom: 40vh;
 }
 
 .parrafo{
@@ -509,9 +449,132 @@ footer{
     font-size: 5vh;
 }
 
+.formulario_sus{
+    display: flex;
+}
+
 .formulario{
-    padding: 5vh 5vh 5vh 5vh;
+    justify-content: center;
+    padding: 10vh 15vh 15vh 10vh;
     
 }
 
+.fondo_mapa{
+    background-color: #efede7;
+}
+.titulo_mapa{
+    text-align: center;
+    font-size: 9vh;
+    color: #032B22;
+    font-family: 'Lora', serif;
+    padding-top: 3vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+.mapa{
+    display: flex;
+    height:  70vh;
+    padding-bottom: 5vh ;
+    justify-content: center;
+    
+}
+
+@media screen and (max-width: 600px){
+
+    /*Nav*/
+    .display{
+        display: flex;
+    }
+    .contenedor_logo{
+        width: 30%;
+    }
+    .logo{
+        padding-left: 5px;
+        width: 6vh;
+    }
+    
+    header{
+        display: flex;
+        background-color: #e4bbe9;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        width: 60%;
+    }
+    
+    .navegacion{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+    }
+    
+    .navegacion li a{
+        font-size: 2vh;
+        text-decoration: none;
+        padding: 4px;
+        color: white;
+    }
+    
+    /*Galeria*/
+
+    .tit_galeria{
+        color: #00503f;
+        text-align: center;
+        font-size: 6vh;
+        font-family: 'Lora', serif;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+    }
+
+
+    .galeria{
+        display: flex;
+
+    }
+
+    .galeria img{
+        width: 95%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    /*Footer*/
+
+    a:visited{ color:#dc5fec; }
+
+    footer{
+        background-color: #e4bbe9;
+    }
+
+    .direccion{
+        display: inline-block;
+        padding-top: 5vh;
+        padding-left: 2vh;
+        padding-bottom: 3vh;
+        font-family: 'Lora', serif; 
+        font-size: 2vh;
+    }
+
+    .horarios{
+        display: inline-block;
+        padding-top: 5vh;
+        padding-left: 0.5vh;
+        padding-bottom: 3vh;
+        font-family: 'Lora', serif;
+        font-size: 2vh; 
+    }
+
+    .redes { 
+        display: inline-block;
+        padding-left: 0vh;
+        padding-bottom: 2vh;
+        padding-top: 3vh;
+        text-align: center;
+    }
+    
 }

@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suscribete | Lotus</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--FONTAWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link 
-    rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link 
-    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" 
-    crossorigin><link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;700&display=swap" rel="stylesheet">
     <!--FAVICON-->
     <link rel="shortcut icon" href="../assets/img/icon.png" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <div class="contentedor_logo">
             <a href="../index.html"><img class="logo" src="../assets/img/favicon.png" alt="icon"></a>
         </div>
         <nav>
-            <ul class="navegacion">
+            <ul class="naveg">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./que_hacer.html">Que hacer</a></li>
+                <li><a href="./propuestas.html">Propuestas</a></li>
                 <li><a href="./sobre_nosotros.html">Sobre Nosotros</a></li>
                 <li><a href="./suscribite.html">Suscribete</a></li>
                 <li><a href="../pages/galeria.html">Galeria</a></li>
@@ -40,60 +46,44 @@
         <section class="fondo_suscribete">
             <h1 class="titulo_para_imagen">Suscribete</h1>
         </section>
+        <p class="parrafo">Te invitamos a suscribirte en nuestra página para poder recibir todo tipo
+            de ofertas y ademas codigos de descuento durante todo el año.
+        </p>
 
         <section>
-            <p class="parrafo">Te invitamos a suscribirte en nuestra página para poder recibir todo tipo 
-                de ofertas y ademas codigos de descuento durante todo el año. 
-            </p>
-            <form class="formulario">
-                <fieldset>
-                    
-                    <div class="margen">
-                    <label for="">Nombre y Apellido: </label>
-                    <input type="text">
-                    </div>
-                    <div class="margen">
-                        <label for="">Correo electronico:</label>
-                        <input type="email" name="" id="">
-                    </div>
-                    <div class="margen">
-                        <label for="">Sugerencias:</label>
-                        <textarea name="" id="" cols="20" rows="10"></textarea>
-                    </div>
-                    <div class="margen">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
-                    </div>
-                </fieldset>
-            </form>
+            <div  class="formulario">
+                <form>
+                    <fieldset>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Nombre y Apellido:</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Email:</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Sugerencias: </label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="   ">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="fondo_mapa">
+                <p class="titulo_mapa">Nuestra ubicación</p>
+                <div class="mapa">
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14877.026718571524!2d-86.8111951
+                    7801783!3d21.221667826976905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2e69d2dc17fd%3A0
+                    xe2e83efc6109482!2sCosta%20Mujeres%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sar!4v1674186741653!5m2!1s
+                    es!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy=
+                    "no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </section>
 
     </main>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <footer class="display">
 
@@ -101,24 +91,24 @@
             <h3>Reservas</h3>
             <p>123 Anywhere St.,Any City ST 12345 </p>
             <p>123-456-7890</p>
-            <p>lotusreservas@gmail.com</p> 
         </section>
 
         <section class="horarios">
             <h3>Horarios de Atención</h3>
             <p>Lunes a Viernes:</p>
-            <p>9:00 hs to 18:00 hs</p>
+            <p>9:00 hs a 18:00 hs</p>
             <p>Sabados:</p>
-            <p>9:00 hs to 12:00hs</p>
+            <p>9:00 hs a 12:00hs</p>
         </section>
 
-        <section class="redes"> 
-            <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-4x"></i></a>
-            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-4x"></i></a>
-            <a href="https://es-la.facebook.com"><i class="fa-brands fa-square-facebook fa-4x"></i></a>
+        <section class="redes">
+            <a target="_blank" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-4x"></i></a>
+            <a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-4x"></i></a>
+            <a target="_blank" href="https://es-la.facebook.com"><i class="fa-brands fa-square-facebook fa-4x"></i></a>
 
         </section>
     </footer>
 
 </body>
+
 </html>
