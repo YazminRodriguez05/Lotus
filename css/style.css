@@ -5,50 +5,11 @@
 }
 
 /*Barra de nav*/
-
-.logo{
-    padding-left: 2vh;
-    width: 10%;
-}
-
-.marca{
-    display: inline-block;
-    font-size: 4vh;
-    color: white;
-}
-
-header{
-    display: flex;
+.color_nav{
     background-color: #e4bbe9;
 }
-
-nav{
-    display: flex;
-    justify-content: flex-end;
-    width: 60%;
-}
-
-.contenedor_logo{
-    width: 40%;
-}
-
-.navegacion{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-}
-
-.navegacion li a{
-    text-decoration: none;
-    padding: 5px;
+.color_links{
     color: white;
-}
-
-.navegacion li a:hover{
-    border-bottom: solid 1px;
-    font-size: 2.5vh;
 }
 
 /*Titulo main*/
@@ -199,6 +160,8 @@ nav{
 }
 
 .links{
+    list-style-type: none;
+    text-decoration: none;
     padding-top: 3vh;
     text-align: center;
     color: white;
@@ -477,48 +440,6 @@ a:visited{ color:#dc5fec; }
 
 @media screen and (max-width: 600px){
 
-    /*Nav*/
-    .display{
-        display: flex;
-    }
-    .contenedor_logo{
-        width: 30%;
-    }
-    .logo{
-        padding-left: 5px;
-        width: 6vh;
-    }
-    
-    header{
-        display: flex;
-        background-color: #e4bbe9;
-    }
-    
-    nav{
-        display: flex;
-        justify-content: flex-end;
-        width: 60%;
-    }
-    
-    .navegacion{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 60%;
-    }
-    
-    .navegacion li a{
-        font-size: 1.5vh;
-        text-decoration: none;
-        padding: 1vh;
-        color: white;
-    }
-    .navegacion li a:hover{
-        border-bottom: none;
-        font-size: 1.5vh;
-    }
-
     /*Titulo main*/
     .img_inicio{
         background-image: url(../assets/img/hotel9.jpg);
@@ -644,7 +565,8 @@ a:visited{ color:#dc5fec; }
         text-align: center;
         color: #032B22;
         padding-top: 1vh;
-        padding-left: 1vh;
+        font-size: 3vh;
+        padding-left: 0vh;
         padding-bottom: 0vh;
         font-family: 'Lora', serif;
     }
@@ -891,6 +813,7 @@ a:visited{ color:#dc5fec; }
     /*Footer*/
     .display_footer{
         display: flex;
+        flex-wrap: wrap;
     }
 
     a:visited{ color:#dc5fec; }
@@ -923,6 +846,7 @@ a:visited{ color:#dc5fec; }
         padding-bottom: 2vh;
         padding-top: 3vh;
         text-align: center;
+        font-size: 2vh;
     }
     
 }
