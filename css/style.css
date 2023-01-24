@@ -300,7 +300,7 @@ a:visited{ color:#dc5fec; }
     padding-left: 10vh;
     
 }
-.img_que_hacer{
+.img_prop{
     display: inline-block;
     width: 100%;
 }
@@ -509,10 +509,14 @@ a:visited{ color:#dc5fec; }
     }
     
     .navegacion li a{
-        font-size: 2vh;
+        font-size: 1.5vh;
         text-decoration: none;
-        padding: 4px;
+        padding: 1vh;
         color: white;
+    }
+    .navegacion li a:hover{
+        border-bottom: none;
+        font-size: 1.5vh;
     }
 
     /*Titulo main*/
@@ -611,14 +615,14 @@ a:visited{ color:#dc5fec; }
         justify-content: center;
         padding-right: 5vh;
         padding-left: 5vh;
-        height: 25vh;
+        height: 26vh;
     }
 
     .img_seccion_2{
         justify-content: center;
         padding-right: 2vh;
-        padding-left:2vh;
-        height: 25vh;
+        padding-left: 3vh;
+        height: 24vh;
     }
 
     .img_seccion_3{
@@ -629,9 +633,8 @@ a:visited{ color:#dc5fec; }
     }
 
     .habitaciones{
-        color: #032B22;
-        
-        padding-left: 10vh;
+        color: #032B22; 
+        padding-left: 12vh;
         padding-right: 10vh;
         padding-bottom: 0vh;
         font-family: 'Lora', serif; 
@@ -641,7 +644,8 @@ a:visited{ color:#dc5fec; }
         text-align: center;
         color: #032B22;
         padding-top: 1vh;
-        padding-left: 2vh;
+        padding-left: 1vh;
+        padding-bottom: 0vh;
         font-family: 'Lora', serif;
     }
 
@@ -649,7 +653,7 @@ a:visited{ color:#dc5fec; }
         text-align: center;
         color: #032B22;
         padding-top: 1vh;
-        padding-left: 4vh;
+        padding-left: 0vh;
         font-family: 'Lora', serif;
     }
 
@@ -680,6 +684,56 @@ a:visited{ color:#dc5fec; }
         color: white;
         font-family: 'Lora', serif;
     }
+    /*propuestas html*/
+    .background_prop{
+        background-color:#efede7 ;
+    }
+
+    .tit_prop{
+        color: #032B22;
+        text-align: center;
+        font-size: 6vh;
+        font-family: 'Lora', serif;
+        padding-top: 5vh;
+        padding-bottom: 0vh;
+
+    }
+
+    .descrip{
+        width: 100%;
+        line-height: 3vh;
+        font-size: 2vh;
+        font-family: 'Lora', serif;
+        padding-top: 5vh;
+        padding-left: 4vh;
+        padding-right: 4vh;
+        padding-bottom: 5vh;
+    
+    }
+    .descrip_1{
+        width: 100%;
+        line-height: 3vh;
+        font-size: 2vh;
+        font-family: 'Lora', serif;
+        padding-top: 2vh;
+        padding-bottom: 3vh;
+        padding-left: 3vh;
+        
+    }
+    .descrip_2{
+        width: 100%;
+        line-height: 3vh;
+        font-size: 2vh;
+        font-family: 'Lora', serif;
+        padding-top: 4vh;
+        padding-left: 3vh;
+        
+    }
+    .img_prop{
+        display: inline-block;
+        width: 100%;
+    }
+
     /*Sobre Nosotros html*/
 
     .fondo_sobre_nos{
@@ -693,71 +747,62 @@ a:visited{ color:#dc5fec; }
     }
 
     .parrafo_sob_nos{
-        flex-wrap: wrap;
-        display: flex;
+        width: 100%;
         flex-direction: column;
         text-align: left;
         line-height: 20px;
-        font-size: 2vh ;
+        font-size: 2.5vh ;
         font-family: 'Lora', serif;
-        padding-left: 8vh;
-        padding-right: 8vh;
+        text-align: center;
+        padding-top: 3vh;
+        padding-left: 4.5vh;
+        padding-right: 5vh;
+        padding-bottom: 0;
     }
 
     .img{
+        width: 100%;
         display: flex;
         flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 1vh;
     }
 
     .img_sob{
-        width: 80%;
+        width: 100%;
+        padding-top: 2vh;
         
     }
 
     .img_sob1{
-        width: 80%;
+        width: 100%;
     }
 
 
     .parrafo_sob_nos1{
-        flex-wrap: wrap;
-        display: flex;
+        width: 100%;
         flex-direction: column;
         text-align: left;
         line-height: 20px;
         font-size: 2vh;
         font-family: 'Lora', serif;
-        padding: 15vh 25vh  5vh 10vh;
+        padding: 3vh 3vh  2vh 3vh;
 
     }
 
     .parrafo_sob_nos2{
-        flex-wrap: wrap;
-        display: flex;
+        width: 100%;
         flex-direction: column;
         text-align: left;
         line-height: 20px;
         font-size: 2vh;
         font-family: 'Lora', serif;
-        padding: 15vh 10vh  5vh 20vh;
+        padding: 2vh 10vh  3vh 5vh;
     }
 
     /*Suscribete html*/
 
-    .naveg{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 60%;
-        font-size: small;
-    }
 
-    .naveg li a{
-        text-decoration: none;
-        padding-top: 20vh ; 
-        color: white;
-    }
     .fondo_suscribete{
         background-image: url(../assets/img/playa.jpg);
         background-repeat: no-repeat;
