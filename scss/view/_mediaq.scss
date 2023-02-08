@@ -1,0 +1,275 @@
+@media screen and (max-width: 600px){
+    .img_inicio{
+        background-image: url(https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_960_720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .titulo{
+        color: map-get($paleta_de_colores , octavo );
+        -webkit-text-stroke: 1px black; 
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 50px;
+    }
+    
+    .subtitulo{
+        color: map-get($paleta_de_colores , octavo );
+        -webkit-text-stroke: 0.5px black;    
+        font-size: 1.5rem;
+        font-family: 'Lora', serif;
+        line-height: 0.9;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .presentacion1{
+        display: flex;
+        flex-direction: column;
+        background-color: map-get($paleta_de_colores , tercero);
+    }
+
+    .info_presentacion{
+        @include width(100%);
+    }
+    
+    .display{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tit_pres{
+        justify-content: center;
+        font-size: 3vh;
+        color: map-get($paleta_de_colores , segundo);
+        padding: 3vh 3vh 1vh 3vh;
+    }
+
+    .subtit{
+        font-size: 2vh; 
+        padding: 1vh 5vh 2vh 5vh;  
+        text-align: justify; 
+    }
+    .img_main{
+        display: flex;
+        height: 200px;
+        border-radius: 30%;
+        padding: 20px 20px 10px 80px;
+    }
+
+    .presentacion2{
+        display: flex;
+        flex-direction: column;
+        background-color:map-get($paleta_de_colores , segundo);
+
+    }
+
+    .img_main2{
+        height: 180px;
+        border-radius: 30%;
+        padding: 20px 5px 2% 90px;
+    }
+
+    .text_descr{
+        color: map-get($paleta_de_colores , cuarto);
+        font-size: 2.5vh;
+        padding: 2vh 3vh 2vh 3vh;  
+        text-align: center;
+        margin: 0;
+    }
+    .links{
+        padding-top: 2vh;
+        text-align: center;
+        color: map-get($paleta_de_colores , octavo);
+        font-size: 2vh;
+        padding-left: 1vh;
+        padding-bottom: 1vh;
+        margin: 0;
+
+        li{
+            a{
+                text-decoration: none;
+                color: map-get($paleta_de_colores , octavo);
+            }
+        }
+    }
+
+    /*propuestas html*/
+    .descrip{
+        @include width(100%);
+        line-height: 3vh;
+        font-size: 2vh;
+        padding: 5vh 4vh 5vh 4vh;
+    }
+    
+    .descrip_1{
+        @extend .descrip;
+        padding: 2vh 0 3vh 3vh;
+    }
+    .descrip_2{
+        @extend .descrip;
+        padding: 2vh 2vh 0 3vh;        
+    }
+
+    .img_prop{
+        display: inline-block;
+        @include width(90%);
+        padding-left: 20px
+    }
+    
+    /*Sobre Nosotros html*/
+
+    .fondo_sobre_nos{
+        @extend .img_inicio;
+        background-image: url(../assets/img/hotel8.jpg);
+    }
+
+    .parrafo_sob_nos{
+        @include width(100%);        
+        flex-direction: column;
+        line-height: 20px;
+        font-size: 2.5vh ;
+        padding: 2vh 2vh 0 2vh;
+    }
+
+    .img{
+        @include width(100%); 
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 1vh;
+    }
+    
+    .img_sob{
+        @include width(100%); 
+        padding: 2vh 5vh 2vh 5vh;
+    }
+    
+    .img_sob1{
+        @include width(100%); 
+        padding: 2vh 5vh 2vh 5vh;
+    }
+    
+    .parrafo_sob_nos1{
+        @extend .parrafo_sob_nos;
+        font-size: 2vh;
+        padding: 0 3vh  2vh 3vh;
+    }
+
+    /*Suscribete html*/
+
+
+    .fondo_suscribete{
+        @extend .img_inicio;
+        background-image: url(../assets/img/playa.jpg);   
+    }
+
+    .titulo_para_imagen{
+        color: map-get($paleta_de_colores , octavo);
+        -webkit-text-stroke: 1px black; 
+        text-align: center;
+        font-size: 3rem ;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .parrafo{
+        text-align: center;
+        font-size: 2.5vh;
+        padding: 3vh 4vh 0 4vh;
+    }
+
+    .margen{
+        padding: 2vh 2vh 2vh 2vh;
+        font-size: 5vh;
+    }
+
+    .formulario_sus{
+        display: flex;
+    }
+
+    .formulario{
+        justify-content: center;
+        padding: 10vh 15vh 15vh 10vh;
+        
+    }
+
+    .fondo_mapa{
+        background-color: map-get($paleta_de_colores , tercero);
+    }
+
+    .titulo_mapa{
+        text-align: center;
+        font-size: 3vh;
+        color: map-get($paleta_de_colores , segundo);
+        padding: 3vh 8vh 0 8vh;
+    }
+    .mapa{
+        display: flex;
+        height:  60vh;
+        padding-bottom: 5vh ;
+        justify-content: center;
+        
+    }
+
+    /*Galeria*/
+
+    .tit_galeria{
+        color: map-get($paleta_de_colores , segundo);
+        text-align: center;
+        font-size: 6vh;
+        padding-top: 5vh;
+        padding-bottom: 2vh;
+    }
+    .galeria{
+        img{
+            @include width(75%); 
+            padding: 5px;
+        }
+    }
+
+    .display_footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer{
+        background-color: map-get($paleta_de_colores , primero);
+    }
+
+    .direccion{
+        width: 33.3%;
+        display: inline-block;
+        font-size: 2vh;
+        padding: 5vh 0 3vh 2vh;
+
+        h3{
+            font-size: 1rem;
+        }
+    }
+
+    .horarios{
+        width: 33.3%;
+        display: inline-block;
+        font-size: 2vh; 
+        padding: 5vh 0 3vh 1vh;
+
+        h3{
+            font-size: 1rem;
+        }
+    }
+
+    .btn{ 
+        width: 33.3%;
+        flex-direction: column;
+        padding: 5vh 3vh;
+        text-align: center;
+        font-size: 2vh;
+        a{
+            text-decoration: none;
+            padding-left: 2vh;
+        }
+        a:visited{ color:#dc5fec; }
+    
+    }
+}

@@ -1,0 +1,34 @@
+footer{
+    background-color: #e4bbe9;
+}
+
+.direccion{
+    display: inline-block;
+    width: 33.35%;
+    padding-top: 5vh;
+    padding-left: 10vh;
+    padding-bottom: 3vh;
+    font-family: 'Lora', serif; 
+}
+
+.horarios{
+    display: inline-block;
+    width: 33.3%;
+    padding-top: 5vh;
+    padding-left: 20vh;
+    padding-bottom: 3vh;
+}
+
+.btn { 
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.3%;
+    padding-top: 5vh;
+    padding-left: 20vh;
+    a{
+        text-decoration: none;
+        padding-left: 2vh;
+        color: map-get($paleta_de_colores , quinto);
+    }
+    
+}

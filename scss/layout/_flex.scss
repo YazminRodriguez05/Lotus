@@ -1,0 +1,26 @@
+.display{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info_presentacion{
+    width: 50%;
+}
+
+.presentacion2{
+    display: flex;
+    background-color:#032B22;
+}
+
+.display_footer{
+    display: flex;
+}
+
+.galeria{
+    @extend .display;
+    justify-content: space-evenly;
+}
+
+.formulario_sus{
+    display: flex;
+}

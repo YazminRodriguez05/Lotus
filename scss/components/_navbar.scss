@@ -1,0 +1,8 @@
+.color{
+    &_nav{
+        background-color: map-get($paleta_de_colores , primero);
+    }
+    &_links{
+        color:map-get($paleta_de_colores , tercero );
+    }
+}

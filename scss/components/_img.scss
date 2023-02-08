@@ -1,0 +1,60 @@
+.img_inicio{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fondo_sobre_nos{
+    @extend .img_inicio;
+    background-image: url(../assets/img/hotel8.jpg);
+}
+
+.fondo_suscribete{
+    @extend .img_inicio;
+    background-image: url(../assets/img/playa.jpg);
+}
+
+.img_main{
+    display: inline-block;
+    height: 50vh;
+    padding: 5vh;
+    border-radius: 70px;
+}
+
+.img_main2{
+    @extend .img_main;
+    padding-left: 2vh;
+}
+
+.img_prop{
+    display: inline-block;
+    @include width(100%);
+}
+
+.galeria{
+    img{
+        @include width(30%);
+        padding: 10px;
+    }
+
+    img:hover{
+        border: solid 3px map-get($paleta_de_colores, septimo);
+    }
+}
+
+.img{
+    @include width(50%);
+    display: inline-block;
+}
+
+.img_sob{
+    display: inline-block;
+    padding-top: 8vh;
+    @include width(100%);
+}
+
+.img_sob1{
+    display: inline-block;
+    @include width(100%);
+}
+
