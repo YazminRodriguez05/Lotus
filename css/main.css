@@ -342,7 +342,7 @@ footer {
     display: flex;
     height: 200px;
     border-radius: 30%;
-    padding: 20px 20px 10px 80px;
+    padding: 20px 20px 10px 35px;
   }
   .presentacion2 {
     display: flex;
@@ -350,9 +350,9 @@ footer {
     background-color: #00503f;
   }
   .img_main2 {
-    height: 180px;
+    height: 200px;
     border-radius: 30%;
-    padding: 20px 5px 2% 90px;
+    padding: 20px 5px 2% 40px;
   }
   .text_descr {
     color: #40FFB5;
