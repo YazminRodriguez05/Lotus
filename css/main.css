@@ -1,15 +1,16 @@
-.btn--instagram:hover {
-  color: #AE4198;
-}
-
-.btn--facebook:hover {
-  color: #41579A;
+/*variables*/
+.btn--facebook:hover, .btn--whatsapp:hover {
+  color: white;
+  background-color: #41579A;
 }
 
 .btn--whatsapp:hover {
-  color: #00e676;
+  color: white;
+  background-color: #00e676;
 }
 
+/*funciones*/
+/*reset*/
 * {
   padding: 0;
   margin: 0;
@@ -17,15 +18,44 @@
   font-family: "Lora", serif;
 }
 
+/*contenedores*/
+.display, .galeria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info_presentacion {
+  width: 50%;
+}
+
+.presentacion2 {
+  display: flex;
+  background-color: #00503f;
+}
+
+.display_footer {
+  display: flex;
+}
+
+.galeria {
+  justify-content: space-evenly;
+}
+
+.formulario_sus {
+  display: flex;
+}
+
+/*componentes*/
 .color_nav {
-  background-color: #e4bbe9;
+  background-color: #db98e4;
 }
 .color_links {
-  color: #efede7;
+  color: white;
+  font-size: 18px;
 }
 
 .img_inicio, .fondo_suscribete, .fondo_sobre_nos {
-  background-image: url(https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_960_720.jpg);
+  background-image: url(/assets/img/hotel9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -214,32 +244,6 @@
   justify-content: center;
 }
 
-.display, .galeria {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.info_presentacion {
-  width: 50%;
-}
-
-.presentacion2 {
-  display: flex;
-  background-color: #032B22;
-}
-
-.display_footer {
-  display: flex;
-}
-
-.galeria {
-  justify-content: space-evenly;
-}
-
-.formulario_sus {
-  display: flex;
-}
-
 .presentacion1 {
   background-color: #efede7;
 }
@@ -260,7 +264,7 @@
 }
 
 footer {
-  background-color: #e4bbe9;
+  background-color: #db98e4;
 }
 
 .direccion {
@@ -280,19 +284,47 @@ footer {
   padding-bottom: 3vh;
 }
 
-.btn {
+.btn_redes {
   display: flex;
   flex-wrap: wrap;
   width: 33.3%;
   padding-top: 5vh;
   padding-left: 20vh;
 }
-.btn a {
+.btn_redes a {
   text-decoration: none;
   padding-left: 2vh;
-  color: #de6eeb;
 }
 
+.btn--instagram {
+  font-size: 40px;
+  background: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #a2a2a2;
+}
+.btn--instagram:hover {
+  background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443AB);
+  color: white;
+}
+
+.btn--facebook, .btn--whatsapp {
+  font-size: 40px;
+  background: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #a2a2a2;
+}
+
+/*view*/
 @media screen and (max-width: 600px) {
   .img_inicio, .fondo_sobre_nos, .fondo_suscribete {
     background-image: url(https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_960_720.jpg);
@@ -337,12 +369,12 @@ footer {
     font-size: 2vh;
     padding: 1vh 5vh 2vh 5vh;
     text-align: justify;
+    margin: 0;
   }
   .img_main, .img_main2 {
-    display: flex;
-    height: 200px;
+    width: 100%;
     border-radius: 30%;
-    padding: 20px 20px 10px 35px;
+    padding: 2vh;
   }
   .presentacion2 {
     display: flex;
@@ -350,9 +382,9 @@ footer {
     background-color: #00503f;
   }
   .img_main2 {
-    height: 200px;
+    width: 100%;
     border-radius: 30%;
-    padding: 20px 5px 2% 40px;
+    padding: 2vh;
   }
   .text_descr {
     color: #40FFB5;
@@ -382,15 +414,16 @@ footer {
     padding: 5vh 4vh 5vh 4vh;
   }
   .descrip_1 {
+    font-size: 1vh;
     padding: 2vh 0 3vh 3vh;
   }
   .descrip_2 {
-    padding: 2vh 2vh 0 3vh;
+    font-size: 0.5vh;
+    padding: 2vh 2vh 0 2vh;
   }
   .img_prop {
     display: inline-block;
-    width: 90%;
-    padding-left: 20px;
+    width: 100%;
   }
   /*Sobre Nosotros html*/
   .fondo_sobre_nos {
@@ -482,13 +515,13 @@ footer {
     flex-wrap: wrap;
   }
   footer {
-    background-color: #e4bbe9;
+    background-color: #db98e4;
   }
   .direccion {
     width: 33.3%;
     display: inline-block;
     font-size: 2vh;
-    padding: 5vh 0 3vh 2vh;
+    padding: 5vh 0 3vh 1vh;
   }
   .direccion h3 {
     font-size: 1rem;
@@ -497,23 +530,46 @@ footer {
     width: 33.3%;
     display: inline-block;
     font-size: 2vh;
-    padding: 5vh 0 3vh 1vh;
+    padding: 5vh 0 3vh 0;
   }
   .horarios h3 {
     font-size: 1rem;
   }
-  .btn {
+  .btn_redes {
     width: 33.3%;
     flex-direction: column;
-    padding: 5vh 3vh;
-    text-align: center;
-    font-size: 2vh;
+    padding: 5vh;
   }
-  .btn a {
+  .btn_redes a {
     text-decoration: none;
-    padding-left: 2vh;
+    padding: 0;
   }
-  .btn a:visited {
+  .btn_redes a:visited {
     color: #dc5fec;
+  }
+  .btn--instagram {
+    display: flex;
+    flex-direction: column;
+    font-size: px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443AB);
+    color: white;
+  }
+  .btn--facebook, .btn--whatsapp {
+    display: flex;
+    flex-direction: column;
+    font-size: 38px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #41579A;
+    color: white;
+  }
+  .btn--whatsapp {
+    background: #00e676;
   }
 }/*# sourceMappingURL=main.css.map */

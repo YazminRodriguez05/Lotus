@@ -9,7 +9,7 @@
 
 .presentacion2{
     display: flex;
-    background-color:#032B22;
+    background-color:map-get($paleta_de_colores , segundo);
 }
 
 .display_footer{

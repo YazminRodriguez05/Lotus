@@ -4,13 +4,13 @@
     padding-top: 3vh;
     padding-left: 5vh;
     text-align: center;
-    color: white;
+    color: map-get($paleta_de_colores , octavo);
     font-size: 4.5vh;
 
     li{
         a{
             text-decoration: none;
-            color: white;
+            color: map-get($paleta_de_colores , octavo);
             font-family: 'Lora', serif; 
         }
     }

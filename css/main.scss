@@ -1,12 +1,18 @@
+/*variables*/
 @import"../scss/variables/colors";
-@import"../scss/funciones/maps";
+@import"../scss/variables/maps";
+/*funciones*/
 @import"../scss/funciones/mixin";
+/*reset*/
 @import "../scss/normalize/reset";
+/*contenedores*/
+@import"../scss/layout/flex";
+/*componentes*/
 @import"../scss/components/navbar";
 @import"../scss/components/img";
 @import"../scss/components/txt";
-@import"../scss/layout/flex";
 @import"../scss/components/background";
 @import"../scss/components/a";
 @import"../scss/components/footer";
+/*view*/
 @import"../scss/view/mediaq";

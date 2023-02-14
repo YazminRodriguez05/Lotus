@@ -1,5 +1,5 @@
 footer{
-    background-color: #e4bbe9;
+    background-color: map-get($paleta_de_colores , primero );
 }
 
 .direccion{
@@ -19,7 +19,7 @@ footer{
     padding-bottom: 3vh;
 }
 
-.btn { 
+.btn_redes{ 
     display: flex;
     flex-wrap: wrap;
     width: 33.3%;
@@ -28,7 +28,39 @@ footer{
     a{
         text-decoration: none;
         padding-left: 2vh;
-        color: map-get($paleta_de_colores , quinto);
     }
     
+}
+
+.btn--instagram{
+    font-size: 40px;
+    background: map-get($paleta_de_colores , octavo);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+
+    &:hover{
+        background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443AB);
+        color: map-get($paleta_de_colores , octavo);
+    }
+}
+
+.btn--facebook{
+    font-size: 40px;
+    background: map-get($paleta_de_colores , octavo);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+.btn--whatsapp{
+    @extend .btn--facebook;
 }

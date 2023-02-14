@@ -3,6 +3,7 @@
         background-color: map-get($paleta_de_colores , primero);
     }
     &_links{
-        color:map-get($paleta_de_colores , tercero );
+        color:map-get($paleta_de_colores , octavo );
+        font-size: 18px;
     }
 }

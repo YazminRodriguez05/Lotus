@@ -1,11 +1,13 @@
 $redes:(
-    instagram: #AE4198,
     facebook: #41579A,
     whatsapp: #00e676,
 );
 
+
 @each $red, $color in $redes {
-    .btn--#{$red}:hover {
-        color: $color;
+    .btn--#{$red}:hover{
+        color: white;
+        background-color: $color;
     }
 }
+

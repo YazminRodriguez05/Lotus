@@ -49,12 +49,12 @@
         font-size: 2vh; 
         padding: 1vh 5vh 2vh 5vh;  
         text-align: justify; 
+        margin: 0;
     }
     .img_main{
-        display: flex;
-        height: 200px;
+        width: 100%;
         border-radius: 30%;
-        padding: 20px 20px 10px 35px;
+        padding: 2vh;
     }
 
     .presentacion2{
@@ -65,9 +65,9 @@
     }
 
     .img_main2{
-        height: 200px;
+        width: 100%;
         border-radius: 30%;
-        padding: 20px 5px 2% 40px;
+        padding: 2vh;
     }
 
     .text_descr{
@@ -104,17 +104,18 @@
     
     .descrip_1{
         @extend .descrip;
+        font-size: 1vh;
         padding: 2vh 0 3vh 3vh;
     }
     .descrip_2{
         @extend .descrip;
-        padding: 2vh 2vh 0 3vh;        
+        font-size: 0.5vh;
+        padding: 2vh 2vh 0 2vh;        
     }
 
     .img_prop{
         display: inline-block;
-        @include width(90%);
-        padding-left: 20px
+        @include width(100%);
     }
     
     /*Sobre Nosotros html*/
@@ -241,7 +242,7 @@
         width: 33.3%;
         display: inline-block;
         font-size: 2vh;
-        padding: 5vh 0 3vh 2vh;
+        padding: 5vh 0 3vh 1vh;
 
         h3{
             font-size: 1rem;
@@ -252,24 +253,51 @@
         width: 33.3%;
         display: inline-block;
         font-size: 2vh; 
-        padding: 5vh 0 3vh 1vh;
+        padding: 5vh 0 3vh 0;
 
         h3{
             font-size: 1rem;
         }
     }
 
-    .btn{ 
+    .btn_redes{ 
         width: 33.3%;
         flex-direction: column;
-        padding: 5vh 3vh;
-        text-align: center;
-        font-size: 2vh;
+        padding: 5vh ;
         a{
             text-decoration: none;
-            padding-left: 2vh;
+            padding: 0;
         }
         a:visited{ color:#dc5fec; }
     
+    }
+
+    .btn--instagram{
+        display: flex;
+        flex-direction: column;
+        font-size: px;
+        background: map-get($paleta_de_colores , octavo);
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443AB);
+        color: map-get($paleta_de_colores , octavo);
+    }
+
+    .btn--facebook{
+        display: flex;
+        flex-direction: column;
+        font-size: 38px;
+        background: map-get($paleta_de_colores , octavo);
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background: #41579A;
+        color: map-get($paleta_de_colores , octavo);
+    }
+    
+    .btn--whatsapp{
+        @extend .btn--facebook;
+        background: #00e676;
     }
 }

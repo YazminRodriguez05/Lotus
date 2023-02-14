@@ -27,48 +27,48 @@
     <!--CSS-->
     <link rel="stylesheet" href="../css/main.css">
 </head>
+
 <body>
     <header>
-        <!--Navbar de bootstrap-->
-        <nav class="navbar color_nav" data-bs-theme="dark">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg color_nav" data-bs-theme="dark">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <img class="animate__animated animate__backInDown" src="..//assets/img/icon.png" alt="icono flor de loto" width="40">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active  color_links" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color_links" href="./propuestas.html">Propuestas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color_links disabled" href="./sobre_nosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color_links" href="./suscribite.html">Suscribite</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color_links" href="./galeria.html">Galeria</a>
-                    </li>
-                </ul>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link color_links" aria-current="page" href="../index.html">Inicio</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color_links" href="./propuestas.html">Propuestas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled color_links" href="./sobre_nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color_links" href="./suscribite.html">Suscribite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color_links" href="./galeria.html">Galeria</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            </div>  
         </nav>
     </header>
 
 
     <main >
-        <section class="fondo_sobre_nos">
+        <div class="fondo_sobre_nos">
             <h1 class="titulo_para_imagen">Sobre Nosotros</h1>
-        </section>
+        </div>
 
         <section class="display">
             <div class="parrafo_sob_nos" >
@@ -104,25 +104,25 @@
 
     <footer class="display">
 
-        <section class="direccion">
+        <div class="direccion">
             <h3>Reservas</h3>
             <p>123 Anywhere St.,Any City ST 12345 </p>
             <p>123-456-7890</p>
-        </section>
+        </div>
 
-        <section class="horarios">
+        <div class="horarios">
             <h3>Horarios de Atención</h3>
             <p>Lunes a Viernes: 9:00 a 18:00</p>
             <p>Sabados: 9:00 a 12:00</p>
             <p></p>
-        </section>
+        </div>
 
-        <section class="btn">
+        <div class="btn_redes">
             <a target="_blank" href="https://web.whatsapp.com/"><i class="btn--whatsapp fa-brands fa-whatsapp fa-4x"></i></a>
             <a target="_blank" href="https://www.instagram.com"><i class="btn--instagram fa-brands fa-instagram fa-4x"></i></a>
             <a target="_blank" href="https://es-la.facebook.com"><i class="btn--facebook fa-brands fa-square-facebook fa-4x"></i></a>
-
-        </section>
+        </div>
+        
     </footer>
     <!--BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
