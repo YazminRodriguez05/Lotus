@@ -55,7 +55,7 @@
 }
 
 .img_inicio, .fondo_suscribete, .fondo_sobre_nos {
-  background-image: url(/assets/img/hotel9.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -543,9 +543,6 @@ footer {
   .btn_redes a {
     text-decoration: none;
     padding: 0;
-  }
-  .btn_redes a:visited {
-    color: #dc5fec;
   }
   .btn--instagram {
     display: flex;
